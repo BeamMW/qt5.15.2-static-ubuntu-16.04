@@ -1,0 +1,14 @@
+prefix=/home/runner/work/beam-ui/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Quick3DRender
+Description: Qt Quick3DRender module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5Quick3DRender 
+Libs.private: /home/runner/work/beam-ui/qt5-static/lib/libQt5Quick3DUtils.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Quick.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Gui.a -lGL /home/runner/work/beam-ui/qt5-static/lib/libqtlibpng.a /home/runner/work/beam-ui/qt5-static/lib/libqtharfbuzz.a /home/runner/work/beam-ui/qt5-static/lib/libQt5QmlModels.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Qml.a -lrt /home/runner/work/beam-ui/qt5-static/lib/libQt5Network.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Core.a -lm -licui18n -licuuc -licudata -ldl /home/runner/work/beam-ui/qt5-static/lib/libqtpcre2.a -lgthread-2.0 -lglib-2.0 -lpthread /home/runner/work/beam-ui/qt5-static/lib/libQt5OpenGLExtensions.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Gui.a /home/runner/work/beam-ui/qt5-static/lib/libqtlibpng.a /home/runner/work/beam-ui/qt5-static/lib/libqtharfbuzz.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Core.a -lpthread -lm -licui18n -licuuc -licudata -ldl /home/runner/work/beam-ui/qt5-static/lib/libqtpcre2.a -lgthread-2.0 -lglib-2.0 -lGL   
+Cflags: -DQT_QUICK3DRENDER_LIB -I${includedir}/QtQuick3DRender -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Quick3DUtils Qt5Quick
+

@@ -1,0 +1,14 @@
+prefix=/home/runner/work/beam-ui/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Quick
+Description: Qt Quick module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5Quick 
+Libs.private: /home/runner/work/beam-ui/qt5-static/lib/libQt5Gui.a -lGL /home/runner/work/beam-ui/qt5-static/lib/libqtlibpng.a /home/runner/work/beam-ui/qt5-static/lib/libqtharfbuzz.a /home/runner/work/beam-ui/qt5-static/lib/libQt5QmlModels.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Qml.a -lrt /home/runner/work/beam-ui/qt5-static/lib/libQt5Network.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Core.a -lm -licui18n -licuuc -licudata -ldl /home/runner/work/beam-ui/qt5-static/lib/libqtpcre2.a -lgthread-2.0 -lglib-2.0 -lpthread /home/runner/work/beam-ui/qt5-static/lib/libQt5Network.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Core.a -lpthread -lm -licui18n -licuuc -licudata -ldl /home/runner/work/beam-ui/qt5-static/lib/libqtpcre2.a -lgthread-2.0 -lglib-2.0 -lGL   
+Cflags: -DQT_QUICK_LIB -I${includedir}/QtQuick -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml Qt5QmlModels
+

@@ -1,0 +1,5 @@
+QT_PLUGIN.qjp2.TYPE = imageformats
+QT_PLUGIN.qjp2.EXTENDS =
+QT_PLUGIN.qjp2.DEPENDS = core gui
+QT_PLUGIN.qjp2.CLASS_NAME = QJp2Plugin
+QT_PLUGINS += qjp2

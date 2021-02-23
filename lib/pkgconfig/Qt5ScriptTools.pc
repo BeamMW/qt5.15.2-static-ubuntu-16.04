@@ -1,0 +1,14 @@
+prefix=/home/runner/work/beam-ui/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 ScriptTools
+Description: Qt ScriptTools module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5ScriptTools 
+Libs.private: /home/runner/work/beam-ui/qt5-static/lib/libQt5Core.a -lm -licui18n -licuuc -licudata -ldl /home/runner/work/beam-ui/qt5-static/lib/libqtpcre2.a -lgthread-2.0 -lglib-2.0 -lpthread /home/runner/work/beam-ui/qt5-static/lib/libQt5Widgets.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Gui.a /home/runner/work/beam-ui/qt5-static/lib/libqtlibpng.a /home/runner/work/beam-ui/qt5-static/lib/libqtharfbuzz.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Script.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Core.a -lpthread -lm -licui18n -licuuc -licudata -ldl /home/runner/work/beam-ui/qt5-static/lib/libqtpcre2.a -lgthread-2.0 -lglib-2.0 -lGL   
+Cflags: -DQT_SCRIPTTOOLS_LIB -I${includedir}/QtScriptTools -I${includedir}
+Requires: Qt5Core
+

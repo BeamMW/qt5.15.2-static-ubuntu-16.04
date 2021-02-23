@@ -1,0 +1,14 @@
+prefix=/home/runner/work/beam-ui/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 3DInput
+Description: Qt 3DInput module
+Version: 5.15.2
+Libs: -L${libdir} -lQt53DInput 
+Libs.private: /home/runner/work/beam-ui/qt5-static/lib/libQt53DCore.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Gamepad.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Gui.a -lGL /home/runner/work/beam-ui/qt5-static/lib/libqtlibpng.a /home/runner/work/beam-ui/qt5-static/lib/libqtharfbuzz.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Network.a /home/runner/work/beam-ui/qt5-static/lib/libQt5Core.a -lm -licui18n -licuuc -licudata -ldl /home/runner/work/beam-ui/qt5-static/lib/libqtpcre2.a -lgthread-2.0 -lglib-2.0 -lpthread -lGL   
+Cflags: -DQT_3DINPUT_LIB -I${includedir}/Qt3DInput -I${includedir}
+Requires: Qt5Core Qt5Gui Qt53DCore Qt5Gamepad
+
